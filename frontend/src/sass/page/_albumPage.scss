@@ -1,0 +1,59 @@
+.album__page{   
+    padding: 8rem 2rem 2rem;
+    overflow: unset;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+    .album__container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        .album__page__left{
+        position: sticky;
+        width: 30%;
+        position: -webkit-sticky;
+        margin-left: 3rem;
+        margin-top: 2.5rem;
+
+            &__info{
+                height: 100vh;
+                width: 100%;
+                overflow: hidden;
+                &__img{
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    border-radius: 2rem;
+                    img{
+                        width: 100%;
+                        &:hover{
+                            transform: scale(1.02);
+                        }
+                    }
+                }
+                &__txt{
+                    padding: 2rem 1rem 5rem;
+                    text-align: center;
+                    h3{
+                        font-size: 2rem;
+                        color: $txt-main-color;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        color: $txt-third-color;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+        .album__page__right{
+            flex: 1;
+            h3{
+                font-size: 2.5rem;
+                font-weight: 600;
+                padding: 3rem 0;
+            }
+        }
+    }
+}

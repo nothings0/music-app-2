@@ -1,0 +1,21 @@
+.banner{
+    margin-top: 5rem;
+    .slick-slide {
+        height:250px;
+        overflow: hidden;
+    }
+     
+    .slick-slide img {
+        width: 100%;
+        padding:0 1rem;
+    }
+
+    .slick-prev{
+        left: 10px;
+        z-index: 99;
+    }
+    .slick-next{
+        right: 10px;
+        z-index: 99;
+    }
+}
